@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+html,
+body,
+main {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pale-blue);
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 360px;
+  background-color: #fff;
+  border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 5px 10px 18px 5px rgb(0 0 0 / 6%);
+}
+
+.order__img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h1,
+h5 {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.caption,
+.plan-price {
+  color: var(--desaturated-blue);
+  font-size: 0.8rem;
+}
+
+.wrapper {
+  padding: 1.5rem 2.5rem;
+}
+
+.order-plan {
+  background-color: var(--very-pale-blue);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  text-align: start;
+  margin: 1rem 0rem;
+}
+
+#change-plan {
+  font-size: 0.8rem;
+  font-weight: 700;
+  flex: 1;
+  text-align: end;
+  cursor: pointer;
+}
+
+#change-plan:hover,
+#change-plan:active {
+  color: var(--desaturated-blue);
+  text-decoration: none;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  border: none;
+  margin-top: 0.5rem;
+  padding: 0.7rem 0rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn.proceed {
+  color: #fff;
+  background-color: var(--bright-blue);
+  box-shadow: 0px 0px 8px;
+  margin-top: 1.5rem;
+}
+
+.btn.proceed:hover,
+.btn.proceed:active {
+  background-color: var(--desaturated-blue);
+}
+
+.btn.cancel {
+  background-color: transparent;
+  color: var(--desaturated-blue);
+}
+
+.btn.cancel:hover,
+.btn.cancel:active {
+  color: var(--dark-blue);
+}
+
+@media (max-width: 400px) {
+  main {
+    background-image: url("./images/pattern-background-mobile.svg");
+  }
+  .container {
+    max-width: 330px;
+  }
+}
