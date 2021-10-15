@@ -33,7 +33,7 @@ main {
 }
 
 .container {
-  max-width: 360px;
+  max-width: 375px;
   background-color: #fff;
   border-radius: 1rem;
   text-align: center;
@@ -51,7 +51,7 @@ h1 {
 }
 
 h1,
-h5 {
+h2 {
   color: var(--dark-blue);
   font-weight: 900;
 }
@@ -59,7 +59,6 @@ h5 {
 .caption,
 .plan-price {
   color: var(--desaturated-blue);
-  font-size: 0.8rem;
 }
 
 .wrapper {
@@ -77,8 +76,11 @@ h5 {
   margin: 1rem 0rem;
 }
 
+.order-plan section h2 {
+  font-size: 1rem;
+}
+
 #change-plan {
-  font-size: 0.8rem;
   font-weight: 700;
   flex: 1;
   text-align: end;
@@ -130,5 +132,9 @@ h5 {
   }
   .container {
     max-width: 330px;
+  }
+
+  .wrapper {
+    padding: 1.5rem 2rem;
   }
 }
